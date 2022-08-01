@@ -169,7 +169,7 @@ public class FileController {
 
             FileOutputStream thumbnail = new FileOutputStream(new File(uploadDirectory, "t_" + fileName));
 
-            Thumbnailator.createThumbnail(file.getInputStream(), thumbnail, 300, 300);
+            Thumbnailator.createThumbnail(file.getInputStream(), thumbnail, 786, 444);
             thumbnail.close();
 
             fileList.add(fileVO);

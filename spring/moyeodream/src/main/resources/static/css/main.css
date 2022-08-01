@@ -338,7 +338,7 @@ input[type="checkbox"]{
     font-size: 24px;
     letter-spacing: -1px;
     font-weight: 400;
-    height: 76px;
+    height: 66px;
 }
 
 .hashList{
@@ -512,3 +512,6 @@ button{
 .job-content {
     display: none;
 }
+
+/* ------------------------------------ */
+

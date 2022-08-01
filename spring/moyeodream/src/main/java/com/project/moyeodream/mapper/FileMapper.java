@@ -9,11 +9,11 @@ import java.util.List;
 @Mapper
 public interface FileMapper {
     // 게시판 - 파일 등록
-    public void insertPost(FileVO fileVO);
+    public void saveImage(FileVO fileVO);
 
     // 게시판 - 파일 가져오기
-    public List<FileVO> selectPost(Integer postNumber);
+    public List<FileVO> getImage(Integer postNumber);
 
     // 게시판 - 파일 삭제
-    public void deletePost(Integer postNumber);
+    public void deleteImage(Integer postNumber);
 }

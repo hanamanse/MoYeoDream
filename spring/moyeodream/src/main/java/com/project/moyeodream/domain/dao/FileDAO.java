@@ -14,16 +14,16 @@ public class FileDAO {
 
     // 게시판 - 파일 등록
     public void save(FileVO fileVO){
-        fileMapper.insertPost(fileVO);
+        fileMapper.saveImage(fileVO);
     }
 
     // 게시판 - 파일 가져오기
     public List<FileVO> getFileList(Integer postNumber){
-        return fileMapper.selectPost(postNumber);
+        return fileMapper.getImage(postNumber);
     }
 
     // 게시판 - 파일 삭제
     public void remove(Integer postNumber){
-        fileMapper.deletePost(postNumber);
+        fileMapper.deleteImage(postNumber);
     }
 }

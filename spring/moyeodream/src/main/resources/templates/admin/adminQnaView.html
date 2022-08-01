@@ -84,7 +84,7 @@
             </div>
             <div class="writerWrap">
                 <div class="writerImg">
-                    <img th:src="*{memberProfile}">
+                    <img th:src="|/upload/profile${memberProfile}|">
                 </div>
                 <div class="writerName">
                     <p th:text="*{memberNickname}"/>
@@ -96,7 +96,7 @@
             <div class="pnaIntro">
             </div>
             <div class="pnaIntroDetail">
-                <p th:text="*{inquiryContent}"/>
+                <p th:utext="*{inquiryContent}"/>
             </div>
         </div>
         <div class="qnaPrintWrap">
